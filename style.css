@@ -1,0 +1,424 @@
+:root {
+
+    --peach: #ffce98;
+    --pink: #d62c72;
+    --light-pink: #f38fbd;
+    --cream: #fff4e8;
+    --dark: #452336;
+
+}
+
+
+* {
+    box-sizing: border-box;
+}
+
+
+html {
+    scroll-behavior: smooth;
+}
+
+
+body {
+
+    margin: 0;
+
+    font-family:
+        "Trebuchet MS",
+        Arial,
+        sans-serif;
+
+    background-color: var(--cream);
+
+    color: var(--dark);
+
+}
+
+
+header {
+
+    background-color: var(--peach);
+
+    text-align: center;
+
+    padding: 25px 15px 20px;
+
+    border-bottom: 5px solid var(--pink);
+
+}
+
+
+.logo {
+
+    width: 230px;
+
+    max-width: 75%;
+
+    display: block;
+
+    margin: 0 auto 20px;
+
+}
+
+
+nav {
+
+    display: flex;
+
+    justify-content: center;
+
+    flex-wrap: wrap;
+
+    gap: 18px;
+
+}
+
+
+nav a {
+
+    color: var(--dark);
+
+    text-decoration: none;
+
+    font-weight: bold;
+
+    font-size: 15px;
+
+}
+
+
+nav a:hover {
+
+    color: var(--pink);
+
+}
+
+
+.hero {
+
+    min-height: 520px;
+
+    background-color: var(--light-pink);
+
+    text-align: center;
+
+    display: flex;
+
+    flex-direction: column;
+
+    justify-content: center;
+
+    align-items: center;
+
+    padding: 60px 25px;
+
+}
+
+
+.small-title {
+
+    color: var(--pink);
+
+    font-size: 14px;
+
+    font-weight: bold;
+
+    letter-spacing: 3px;
+
+    margin-bottom: 10px;
+
+}
+
+
+.hero .small-title {
+
+    color: var(--dark);
+
+}
+
+
+.hero h1 {
+
+    font-size: clamp(46px, 13vw, 85px);
+
+    margin: 5px 0 20px;
+
+    line-height: 0.95;
+
+}
+
+
+.intro {
+
+    font-size: 18px;
+
+    line-height: 1.6;
+
+    max-width: 500px;
+
+    margin-bottom: 30px;
+
+}
+
+
+.button {
+
+    display: inline-block;
+
+    background-color: var(--pink);
+
+    color: white;
+
+    text-decoration: none;
+
+    font-weight: bold;
+
+    padding: 16px 28px;
+
+    border-radius: 50px;
+
+    transition: 0.2s;
+
+}
+
+
+.button:hover {
+
+    transform: translateY(-2px);
+
+}
+
+
+.dark-button {
+
+    background-color: var(--dark);
+
+}
+
+
+.gallery-section {
+
+    padding: 80px 20px;
+
+    text-align: center;
+
+}
+
+
+.gallery-section h2 {
+
+    font-size: 40px;
+
+    margin-top: 5px;
+
+    margin-bottom: 45px;
+
+}
+
+
+.gallery {
+
+    max-width: 1050px;
+
+    margin: auto;
+
+    display: grid;
+
+    grid-template-columns: 1fr;
+
+    gap: 45px;
+
+}
+
+
+.art-card {
+
+    background-color: white;
+
+    padding: 14px;
+
+    border-radius: 18px;
+
+    box-shadow:
+        0 8px 25px
+        rgba(69, 35, 54, 0.12);
+
+}
+
+
+.image-frame {
+
+    background-color: var(--peach);
+
+    border-radius: 12px;
+
+    overflow: hidden;
+
+}
+
+
+.image-frame img {
+
+    width: 100%;
+
+    height: auto;
+
+    display: block;
+
+}
+
+
+.art-info {
+
+    padding: 12px 5px 5px;
+
+}
+
+
+.art-info h3 {
+
+    color: var(--pink);
+
+    font-size: 25px;
+
+    margin: 8px 0 5px;
+
+}
+
+
+.art-info p {
+
+    margin-top: 0;
+
+}
+
+
+.about {
+
+    background-color: var(--peach);
+
+    padding: 80px 20px;
+
+}
+
+
+.about-box {
+
+    max-width: 700px;
+
+    margin: auto;
+
+    background-color: var(--cream);
+
+    text-align: center;
+
+    padding: 45px 30px;
+
+    border: 5px solid var(--pink);
+
+    border-radius: 25px;
+
+}
+
+
+.about h2 {
+
+    font-size: 36px;
+
+}
+
+
+.about p {
+
+    line-height: 1.7;
+
+}
+
+
+.contact {
+
+    background-color: var(--pink);
+
+    color: white;
+
+    text-align: center;
+
+    padding: 80px 25px;
+
+}
+
+
+.contact .small-title {
+
+    color: var(--peach);
+
+}
+
+
+.contact h2 {
+
+    font-size: 38px;
+
+    margin-top: 10px;
+
+}
+
+
+.contact p {
+
+    max-width: 550px;
+
+    margin: 0 auto 30px;
+
+    line-height: 1.6;
+
+}
+
+
+footer {
+
+    background-color: var(--peach);
+
+    text-align: center;
+
+    padding: 45px 20px;
+
+}
+
+
+.footer-logo {
+
+    width: 150px;
+
+    max-width: 60%;
+
+    margin-bottom: 10px;
+
+}
+
+
+footer p {
+
+    font-size: 13px;
+
+}
+
+
+@media (min-width: 750px) {
+
+    .gallery {
+
+        grid-template-columns: repeat(3, 1fr);
+
+        align-items: start;
+
+    }
+
+
+    .hero {
+
+        min-height: 650px;
+
+    }
+
+}
